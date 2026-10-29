@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-error: #ffffff;
+  --color-primary-fixed-dim: #c3c0ff;
+  --color-secondary: #006c49;
+  --color-on-primary-fixed-variant: #372abf;
+  --color-secondary-fixed: #6ffbbe;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-on-tertiary-container: #ffb759;
+  --color-primary-container: #4338ca;
+  --color-on-surface-variant: #464554;
+  --color-primary-fixed: #e3dfff;
+  --color-surface-container-low: #eff4ff;
+  --color-on-surface: #0b1c30;
+  --color-error: #ba1a1a;
+  --color-on-tertiary-fixed: #2a1700;
+  --color-surface: #f8f9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-outline-variant: #c7c4d7;
+  --color-surface-dim: #cbdbf5;
+  --color-tertiary: #553300;
+  --color-on-background: #0b1c30;
+  --color-on-primary-fixed: #100069;
+  --color-on-tertiary: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-background: #f8f9ff;
+  --color-on-tertiary-fixed-variant: #653e00;
+  --color-inverse-surface: #213145;
+  --color-on-error-container: #93000a;
+  --color-on-primary: #ffffff;
+  --color-on-secondary-container: #00714d;
+  --color-surface-container: #e5eeff;
+  --color-on-secondary-fixed-variant: #005236;
+  --color-surface-variant: #d3e4fe;
+  --color-secondary-container: #6cf8bb;
+  --color-tertiary-fixed: #ffddb8;
+  --color-on-secondary-fixed: #002113;
+  --color-tertiary-container: #744800;
+  --color-primary: #2a14b4;
+  --color-secondary-fixed-dim: #4edea3;
+  --color-surface-container-high: #dce9ff;
+  --color-outline: #777586;
+  --color-inverse-primary: #c3c0ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-primary-container: #c1beff;
+  --color-on-secondary: #ffffff;
+  --color-surface-bright: #f8f9ff;
+  --color-tertiary-fixed-dim: #ffb95f;
+  --color-surface-tint: #5148d7;
+
+  --font-headline-lg: "Hanken Grotesk", sans-serif;
+  --font-headline-md: "Hanken Grotesk", sans-serif;
+  --font-headline-sm: "Hanken Grotesk", sans-serif;
+  --font-display-currency: "Hanken Grotesk", sans-serif;
+  --font-display-currency-mobile: "Hanken Grotesk", sans-serif;
+  --font-currency-tabular: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+
+  --spacing-margin-desktop: 2rem;
+  --spacing-space-md: 1rem;
+  --spacing-margin: 1rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-gutter-tablet: 1.25rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-gutter: 1rem;
+  --spacing-margin-tablet: 1.5rem;
+  --spacing-gutter-desktop: 1.5rem;
+}
+
+@layer utilities {
+  .text-label-sm {
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+  }
+  .text-label-md {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+  }
+  .text-headline-sm {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  .text-headline-md {
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+  }
+  .text-headline-lg {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .text-display-currency-mobile {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+  }
+  .text-display-currency {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+  .text-currency-tabular {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .text-body-lg {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .text-body-md {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .text-body-sm {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.material-symbols-outlined.filled,
+.material-symbols-outlined[data-weight="fill"] {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.card-ambient-shadow {
+  box-shadow: 0px 2px 8px -2px rgba(15, 23, 42, 0.04), 0px 1px 2px 0px rgba(15, 23, 42, 0.02);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateY(180px);
+  }
+}
+
+.scanner-line {
+  animation: pulse-slow 2.8s ease-in-out infinite alternate;
+}
+
